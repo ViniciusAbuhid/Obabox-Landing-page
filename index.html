@@ -7,45 +7,113 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link href="css/index.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.5.1.js"
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
 </head>
-<header>
-    <div id="upper-header">
-        <span>Compre pelo televendas <b>0800 941 2970</b></span>
-        <span>Acompanhe o seu pedido</span>
-        <span>Atendimento</span>
-    </div>
-    <div id='lower-header'>
-        <div id='logo-wrapper'>
-            <img src='assets/logo.jpg' id="logo">
-        </div>
-        <div id="tool-bar">
-            <div id='form-wrapper'>
-                <div class="form-group has-search" id="search-bar-wrapper">
-                    <input type="text" class="form-control" placeholder="Search" id='search-bar'>
-                    <i class="fas fa-search" aria-hidden="true">
-                </div>
-                <img src="assets/phone.png">
-                <img src="assets/cart.png">
-                <img src="assets/menu.png" id='menu-movel'>
-            </div>
-            <div id='navbar-wrapper'>
-                <span>Cyber Monday</span>
-                <span><b>Tech</b></span>
-                <span>Casa & Hobbie</span>
-                <span>Faça você mesmo</span>
-                <span>Retrô</span>
-                <span>Beleza e bem-estar</span>
-                <span>Outlet</span>
-            </div>
-        </div>
-    </div>
-</header>
 
 <body>
+    <header>
+        <div id="upper-header">
+            <span>Compre pelo televendas <b>0800 941 2970</b></span>
+            <span>Acompanhe o seu pedido</span>
+            <span>Atendimento</span>
+        </div>
+        <div id='lower-header'>
+            <div id='logo-wrapper'>
+                <img src='assets/logo.jpg' id="logo">
+            </div>
+            <div id="tool-bar">
+                <div id='form-wrapper'>
+                    <div class="form-group has-search" id="search-bar-wrapper">
+                        <input type="text" class="form-control" placeholder="Search" id='search-bar'>
+                        <!-- <i class="fas fa-search" aria-hidden="true"> -->
+                    </div>
+                    <img class="icon-navbar" src="assets/phone.png">
+                    <img class="icon-navbar" src="assets/cart.png">
+                    <img class="icon-navbar" src="assets/menu.png" id='menu-movel'>
+                </div>
+                <nav id='navbar-wrapper'>
+                    <span>Cyber Monday</span>
+                    <span><b>Tech</b></span>
+                    <span>Casa & Hobbie</span>
+                    <span>Faça você mesmo</span>
+                    <span>Retrô</span>
+                    <span>Beleza e bem-estar</span>
+                    <span>Outlet</span>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section id="section1">
+        <div id='route'>
+            <span id="path">Home > Tech > <b>Caixa de som 7 em 1</b></span>
+            <span id="product-code">CÓDIGO 183256</span>
+        </div>
+        <div id="content">
+            <div id='pics'>
+                <img src='assets/img1.png'>
+                <img src='assets/img2.png'>
+                <img src='assets/img3.png'>
+                <img src='assets/img4.png'>
+                <img src='assets/img5.png'>
+            </div>
+            <div id='main-pic'>
+                <img src="assets/product-pic.png">
+                <span id='alt-text'>Caixa de som Bluetooth 7 funções em 1 só produto</span>
+            </div>
+            <div id='pics2'>
+                <img src='assets/img1.png'>
+                <img src='assets/img2.png'>
+                <img src='assets/img3.png'>
+                <img src='assets/img4.png'>
+                <img src='assets/img5.png'>
+            </div>
+            <span id="product-code2">CÓDIGO 183256</span>
+            <div id="description-wrapper">
+                <div id="fill-space"></div>
+                <div id="text">
+                    <h3>Caixa de som 7 em 1</h3>
+                    <span id='description'>Tenha tudo em um só produto com 80 RMS de potência,
+                        um som de qualidade e equalizações pré-definidas: bluetooth, entrada USB e para cartão
+                        de memória SD, Karaokê, Rádio FM, gravador e entrada para guitarra ou violão!
+                    </span>
+                </div>
+                <div id="checkout">
+                    <div id="price">
+                        de: <del>R$619,00</del>por:
+                        <h2>R$469,90</h2>
+                        ou até <b>9x</b> de <b>R$60,32</b> no cartão
+                    </div>
+                    <button type="button" id='cart-button' class="btn btn-default">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        <b>comprar</b>
+                    </button>
+                </div>
+                <div id="cep-bar">
+                    <div id='cep-field' class="input-group mb-3">
+                        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)"
+                            placeholder="Digite o CEP e calcule frete e prazo">
+                        <div id="ok-button" class="input-group-append">
+                            <span id="ok-button" class="input-group-text"><b>OK</b></span>
+                        </div>
+                    </div>
+                    <div id="frete-prazo">
+                        <span>Frete: <b>R$41,50</b></span>
+                        <span>Prazo: <b>12 dias úteis</b></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="instructions-button-wrapper">
+            <button type="button" id='instructions-button' class="btn btn-default btn-sm">
+                <b>Baixar manual de instruções</b>
+            </button>
+        </div>
+    </section>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
